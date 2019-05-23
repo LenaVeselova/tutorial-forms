@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "say-hello": "echo 'Hello World'",
+    "awesome-npm": "npm run say-hello && echo 'echo NPM is awesome!'",
+    "start": "browser-sync start --files=public/*.* --server --startPath=/public"
   },
   "repository": {
     "type": "git",
     "url": "tutorial-forms"
   },
   "author": "lena",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5"
+  }
 }
