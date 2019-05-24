@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "say-hello": "echo 'Hello World'",
-    "awesome-npm": "npm run say-hello && echo 'echo NPM is awesome!'",
     "start": "browser-sync start --files=public/*.* --server --startPath=/public"
   },
   "repository": {

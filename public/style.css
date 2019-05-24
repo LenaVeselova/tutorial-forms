@@ -1,0 +1,19 @@
+form {
+	padding: 20px;
+	margin: auto;
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.btn-primary {
+	margin-top: 10px;
+	margin-left: 100%;
+	transform: translateX(-100%);
+}
+
+
+@media (min-width: 769px) {
+	form {
+		width: 50%;
+	}
+}

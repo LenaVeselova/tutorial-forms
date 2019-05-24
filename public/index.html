@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
 	<title>App</title>
 </head>
-<body>
-	<div id="app">Here will be app</div>
 
-<script src="add.js"></script>
+<body>
+	<form>
+	  <div class="form-group">
+	    <label for="exampleFormControlInput1">Наименование</label>
+	    <input type="email" class="form-control" id="exampleFormControlInput1" maxlength="255">
+	  </div>
+	  <div class="form-group">
+	    <label for="exampleFormControlSelect1">Категория</label>
+	    <select class="form-control" id="exampleFormControlSelect1">
+	    	<option>Выберите категорию</option>
+	      <option>value 1</option>
+	      <option>value 2</option>
+	      <option>value 3</option>
+	      <option>value 4</option>
+	    </select>
+	  </div>
+	  
+	  <div class="form-group">
+	    <label for="exampleFormControlTextarea1">Описание</label>
+	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="1024"></textarea>
+ 	  </div>
+ 	  <button type="button" class="btn btn-primary">Сохранить</button>
+	</form>
 </body>
 </html>
