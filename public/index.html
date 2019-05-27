@@ -12,27 +12,38 @@
 </head>
 
 <body>
-	<form>
-	  <div class="form-group">
-	    <label for="exampleFormControlInput1">Наименование</label>
-	    <input type="email" class="form-control" id="exampleFormControlInput1" maxlength="255">
-	  </div>
-	  <div class="form-group">
-	    <label for="exampleFormControlSelect1">Категория</label>
-	    <select class="form-control" id="exampleFormControlSelect1">
-	    	<option>Выберите категорию</option>
-	      <option>value 1</option>
-	      <option>value 2</option>
-	      <option>value 3</option>
-	      <option>value 4</option>
-	    </select>
-	  </div>
-	  
-	  <div class="form-group">
-	    <label for="exampleFormControlTextarea1">Описание</label>
-	    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="1024"></textarea>
- 	  </div>
- 	  <button type="button" class="btn btn-primary">Сохранить</button>
-	</form>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">Наименование</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" maxlength="255">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Категория</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>Выберите категорию</option>
+							<option value="1">Собаки</option>
+							<option value="2">Кошки</option>
+							<option value="3">Рыбки</option>
+							<option value="4">Птицы</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Описание</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+								  maxlength="1024"></textarea>
+					</div>
+					<div class="button-group">
+						<button type="submit" class="btn btn-primary">Сохранить</button>
+						<button type="reset" class="btn btn-primary">Очистить</button>
+					</div> <!--btn-group-->
+				</form>
+			</div> <!--col-md-->
+		</div> <!--row-->
+	</div> <!--container-->
+
 </body>
 </html>

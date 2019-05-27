@@ -1,19 +1,10 @@
-form {
-	padding: 20px;
+.col-md-6 {
 	margin: auto;
 }
 .form-group {
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 }
-.btn-primary {
-	margin-top: 10px;
-	margin-left: 100%;
-	transform: translateX(-100%);
+.button-group {
+	text-align: right;
 }
 
-
-@media (min-width: 769px) {
-	form {
-		width: 50%;
-	}
-}
