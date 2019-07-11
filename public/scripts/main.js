@@ -1,9 +1,3 @@
-const div = document.querySelector(".form-group");
-console.log(div.classList);
-
-div.classList.add("error");
-console.log(div.classList);
-
 const form = document.getElementById("mainForm");
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -26,7 +20,7 @@ form.addEventListener("submit", e => {
 
     let category = catEl.value;
 
-    if (Number(category) < 0) {
+    if (Number(category) < 1) {
         catEl.classList.add("error");
         catEl.insertAdjacentHTML(
             "afterend",
