@@ -11,7 +11,7 @@ form.addEventListener('submit', e => {
         nameEl.classList.add('error');
         nameEl.insertAdjacentHTML(
             'afterend',
-            '<span>Наименование должно содержать не менее 5 символов</span>'
+            '<span class="error-text">Наименование должно содержать не менее 5 символов</span>'
         );
     }
 
@@ -24,7 +24,7 @@ form.addEventListener('submit', e => {
         catEl.classList.add('error');
         catEl.insertAdjacentHTML(
             'afterend',
-            '<span>Пожалуйста, выберите категорию</span>'
+            '<span class="error-text">Пожалуйста, выберите категорию</span>'
         );
     }
 
@@ -36,7 +36,7 @@ form.addEventListener('submit', e => {
         descEl.classList.add('error');
         descEl.insertAdjacentHTML(
             'afterend',
-            '<span>Описание должно содержать не менее 10 символов</span>'
+            '<span class="error-text">Описание должно содержать не менее 10 символов</span>'
         );
     }
 });

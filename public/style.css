@@ -10,9 +10,9 @@
 .error {
 	background-color: #ff3333;
 }
-error-text {
+.error-text {
 	color: #A60000;
-	margin-top:0.2rem;
-	font-size:.8rem
+	margin-top: 0.2rem;
+	font-size: 0.8rem;
 }
 
