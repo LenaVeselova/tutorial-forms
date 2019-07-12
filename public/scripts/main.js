@@ -1,6 +1,6 @@
-const showError = (er, text) => {
-    er.classList.add('error');
-    er.insertAdjacentHTML(
+const showError = (el, text) => {
+    el.classList.add('error');
+    el.insertAdjacentHTML(
         'afterend',
         `<span class='error-text'>${text}</span>`
     );
@@ -8,7 +8,15 @@ const showError = (er, text) => {
 
 const clearError = el => {
     el.classList.remove('error');
+
+    let parentEl = el.parentNode;
+    let textEl = parentEl.querySelector('.error-text');
+
+    if (textEl !== null) {
+        parentEl.removeChild(textEl);
+    }
 };
+
 
 const form = document.getElementById('mainForm');
 form.addEventListener('submit', e => {
@@ -23,7 +31,6 @@ form.addEventListener('submit', e => {
     if (name.length < 5) {
         showError(nameEl, 'Наименование должно содержать не менее 5 символов')
     }
-
 
     let catEl = document.querySelector("select[name='category']");
     clearError(catEl);

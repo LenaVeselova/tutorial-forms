@@ -7,8 +7,9 @@
 .button-group {
 	text-align: right;
 }
-.error {
-	background-color: #ff3333;
+.error, .error:focus {
+	background-color: #ff080885;
+	transition: all 1s ease-out 0s;
 }
 .error-text {
 	color: #A60000;
