@@ -1,42 +1,44 @@
+const showError = (er, text) => {
+    er.classList.add('error');
+    er.insertAdjacentHTML(
+        'afterend',
+        `<span class='error-text'>${text}</span>`
+    );
+};
+
+const clearError = el => {
+    el.classList.remove('error');
+};
+
 const form = document.getElementById('mainForm');
 form.addEventListener('submit', e => {
     e.preventDefault();
 
     let nameEl = document.querySelector("input[name='name']");
-    nameEl.classList.remove('error');
+
+    clearError(nameEl);
 
     let name = nameEl.value;
 
     if (name.length < 5) {
-        nameEl.classList.add('error');
-        nameEl.insertAdjacentHTML(
-            'afterend',
-            '<span class="error-text">Наименование должно содержать не менее 5 символов</span>'
-        );
+        showError(nameEl, 'Наименование должно содержать не менее 5 символов')
     }
 
+
     let catEl = document.querySelector("select[name='category']");
-    catEl.classList.remove('error');
+    clearError(catEl);
 
     let category = catEl.value;
 
     if (Number(category) < 1) {
-        catEl.classList.add('error');
-        catEl.insertAdjacentHTML(
-            'afterend',
-            '<span class="error-text">Пожалуйста, выберите категорию</span>'
-        );
+        showError(catEl, 'Пожалуйста, выберите категорию')
     }
 
     let descEl = document.querySelector("textarea[name='description']");
-    descEl.classList.remove('error');
+    clearError(descEl);
 
     let description = descEl.value;
     if (description.length < 10) {
-        descEl.classList.add('error');
-        descEl.insertAdjacentHTML(
-            'afterend',
-            '<span class="error-text">Описание должно содержать не менее 10 символов</span>'
-        );
+        showError(descEl, 'Описание должно содержать не менее 10 символов')
     }
 });
