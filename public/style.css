@@ -9,7 +9,7 @@
 }
 .error, .error:focus {
 	background-color: #ff080885;
-	transition: all 1s ease-out 0s;
+	transition: background-color .5s ease-out;
 }
 .error-text {
 	color: #A60000;
